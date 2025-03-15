@@ -2,6 +2,7 @@ version: 2
 
 models:
   - name: customers
+    description: One record per customer
     columns:
       - name: customer_id
         description: Primary key
@@ -38,5 +39,3 @@ models:
           - relationships:
               to: ref('stg_customers')
               field: customer_id
-
-
